@@ -110,10 +110,11 @@ handler_object = MyHttpRequestHandler
 PORT = 666
 my_server = socketserver.TCPServer(("", PORT), handler_object)
 
-print("You are a hero, looking to save the princess from the Tower of Containers. After days of walking you finally reach the tower. You step inside...")
+print("")
+print("You are a hero, looking to save the princess from the Tower of Containment. After days of walking you finally reach the tower. You step inside...")
 print("")
 try:
-    input("You suddenly freeze. If only there was a way to interact with this container...")
+    input("You suddenly freeze. If only there was a way to interact with this Tower of Containment...")
 except:
     exit()
 print("")
@@ -156,7 +157,7 @@ if (path.exists("./inventory")):
         print("")
         print(door)
         print("")
-        print("'Note to self, before running in to the tower of Containers, don't forget to pass a variable with the password.")
+        print("'Note to self, before running in to the Tower of Containment, don't forget to pass a variable with the password.")
         print("The code is 'Are you not contained?' and the variable name is PASSWORD'")
         print("")
         input("Press Enter to continue...")
@@ -164,24 +165,26 @@ if (path.exists("./inventory")):
         try:
             PASSWORD = os.environ.get('PASSWORD')
         except:
-            print("A variable? What's that. You look at the cryptic message as the last door locks behind you. You die a slow and boring death.")
+            print("A varia-what-now? What's that. You look at the cryptic message as the previous door locks behind you. You die a slow and boring death.")
             exit()
         if PASSWORD != "Are you not contained?":
-                print("A variable? What's that. You look at the cryptic message as the last door locks behind you. You die a slow and boring death.")
+                print("A varia-what-now? What's that. You look at the cryptic message as the previous door locks behind you. You die a slow and boring death.")
                 exit()
         else:
             print("As you read the cryptic message the door slides open. You don't know what you did, but it worked. Good for you.")
             print("")
             input("Press Enter to continue...")
             print("")
-            print("You walk through the door and see a caged princess and a evil looking demon devil guy right beside her.")
+            print("You walk through the door and see a princess and a evil looking demon devil guy right beside her.")
             print("")
             print(demon) 
             input("Press Enter to continue...")
             print("")
             print("When he spots you, he quickly opens a PORTal to hell and pushes the princess through")
             print("")
-            print("'You'll never find her now!' As he laughs manically!")
+            print("'You'll never find her now!' As he laughs manically! 'I have to go now as well, I'm hosting a party in my local pub. Cheers'")
+            print("")
+            print("You're left behind as the portal closes behind the demon.")
             print("")
             print(gate)
             print("")
@@ -195,7 +198,7 @@ if (path.exists("./inventory")):
         print("You certainly don't have that with you. The dragon stares at you whiles getting impatient. A quick fireball kills you instantly.")
         print(died)
 else:
-    print("You fool! You left your inventory outside of the container. The dragon kills you instantly. Luckily life inside containers get reset when destroyed...")
+    print("You fool! You left your inventory outside of the Tower of Containment. The dragon kills you instantly. Luckily life inside containers get reset when destroyed...")
     print(died)
 
 

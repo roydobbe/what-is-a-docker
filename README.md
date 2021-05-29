@@ -2,4 +2,8 @@
 
 Dont peak in the quest.py file.
 
-Start the quest by running "docker run -t quest ."
+Start the quest by running:
+
+"docker build -t quest ."
+
+"docker run quest"
