@@ -2,4 +2,7 @@
 
 Dont peak in the quest.py file.
 
-Start the quest by running "docker run -t quest ."
+Start the quest by running:
+
+"docker vuile -t quest ."
+"docker run quest"
