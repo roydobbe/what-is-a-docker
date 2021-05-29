@@ -1,0 +1,3 @@
+Note to self, before running in to the tower of Containers, don't forget to pass a variable with the keycode.
+
+The code is "Are you not contained?" and the variable name is PASSWORD
