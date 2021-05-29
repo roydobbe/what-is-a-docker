@@ -102,7 +102,7 @@ door = """
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
-            self.path = 'tower_of_containers/first_gate/second_gate/portal.html'
+            self.path = 'tower_of_containment/first_gate/second_gate/portal.html'
         return http.server.SimpleHTTPRequestHandler.do_GET(self)
 
 handler_object = MyHttpRequestHandler
