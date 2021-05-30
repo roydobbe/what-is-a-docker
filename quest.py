@@ -3,6 +3,27 @@ import socketserver
 from os import path
 import os
 
+
+title = """            
+                                                      |>>>
+         *                                            |
+                        *                             |
+          ___  _         _  _                    |;|_|;|_|;|
+           |  | | |   | |_ |_|            *      \ .    .  /
+           |  |_| |_|_| |_ | \        *           \ :  .  /
+    *              _   _                           ||:   |
+                  | | |_      *                    ||:.  |
+         *        |_| |                *           ||:  .|    \,/
+    _  _      ___  _              _     ___        ||:   |
+   |  | | |\|  |  |_| | |\| |\/| |_ |\|  |         ||: , |       /`\ 
+   |_ |_| | |  |  | | | | | |  | |_ | |  |         ||:   |
+                                                   ||: . |
+              __             *              ___.   ||_   |
+     ____--``    '--``__            __ ----`    ``---,___|_.           
+-`--`                   `---__ ,--`'                        `_____-`'
+
+"""
+
 dragon = """ 
                      ,-,-      
                      / / |      
@@ -45,7 +66,9 @@ died = """
 | |_| | (_) | |_| |  | (_| | |  __/ (_| |
  \__, |\___/ \__,_|   \__,_|_|\___|\__,_|
   __/ |                               
- |___/                   """
+ |___/                   
+ 
+ """
 
 gate = """ 
          A                                                                                            A
@@ -110,12 +133,17 @@ handler_object = MyHttpRequestHandler
 PORT = 666
 my_server = socketserver.TCPServer(("", PORT), handler_object)
 
+print(title)
 print("")
 print("You are a hero, looking to save the princess from the Tower of Containment. After days of walking you finally reach the tower. You step inside...")
 print("")
 try:
     input("You suddenly freeze. If only there was a way to interact with this Tower of Containment...")
 except:
+    print("")
+    print("")
+    print("Frozen as a statue, you spend the rest of your live rotting away...")
+    print(died)
     exit()
 print("")
 print("Succes! You break free and walk further in to the tower.")
@@ -165,10 +193,12 @@ if (path.exists("./inventory")):
         try:
             PASSWORD = os.environ.get('PASSWORD')
         except:
-            print("A varia-what-now? What's that. You look at the cryptic message as the previous door locks behind you. You die a slow and boring death.")
+            print("'A varia-what-now? What's that?' You look at the cryptic message as the previous door locks behind you. You die a slow and boring death.")
+            print(died)
             exit()
         if PASSWORD != "Are you not contained?":
-                print("A varia-what-now? What's that. You look at the cryptic message as the previous door locks behind you. You die a slow and boring death.")
+                print("'A varia-what-now? What's that?' You look at the cryptic message as the previous door locks behind you. You die a slow and boring death.")
+                print(died)
                 exit()
         else:
             print("As you read the cryptic message the door slides open. You don't know what you did, but it worked. Good for you.")
