@@ -218,7 +218,7 @@ if (path.exists("./inventory")):
             print("")
             print(gate)
             print("")
-            print("GAME OVER? Press CTRL-C to exit.")
+            print("GAME OVER? You can look for the princess or press CTRL-C to exit.")
             try:
                 my_server.serve_forever()
             except KeyboardInterrupt:
