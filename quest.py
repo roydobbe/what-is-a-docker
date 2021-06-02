@@ -139,7 +139,7 @@ print("")
 print("You are a hero, looking to save the princess from the Tower of Containment. After days of walking you finally reach the tower. You step inside...")
 print("")
 try:
-    input("You suddenly freeze. If only there was a way to interact with this Tower of Containment...")
+    input("You suddenly freeze. If only there was a way to INTERACT with this Tower of Containment...")
 except:
     print("")
     print("")
@@ -186,7 +186,7 @@ if (path.exists("./inventory")):
         print("")
         print(door)
         print("")
-        print("'Note to self, before running in to the Tower of Containment, don't forget to pass a variable with the password.")
+        print("'Note to self, before running in to the Tower of Containment, don't forget to pass a ENVIRONMENT VARIABLE with the password.")
         print("The code is 'Are you not contained?' and the variable name is PASSWORD'")
         print("")
         input("Press Enter to continue...")
@@ -229,7 +229,7 @@ if (path.exists("./inventory")):
         print("You certainly don't have that with you. The dragon stares at you whiles getting impatient. A quick fireball kills you instantly.")
         print(died)
 else:
-    print("You fool! You left your inventory outside of the Tower of Containment. The dragon kills you instantly. Luckily life inside containers get reset when destroyed...")
+    print("You fool! You didnt ADD your inventory to the Tower of Containment. The dragon kills you instantly. Luckily life inside containers get reset when destroyed...")
     print(died)
 
 
